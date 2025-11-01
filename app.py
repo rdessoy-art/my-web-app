@@ -31,22 +31,3 @@ def test_db():
 
 if __name__ == '__main__':
     app.run(debug=True)
-```
-
-## Step 2: Create a `.env` File for Local Development
-
-Create a file called `.env` in your project folder:
-```
-DATABASE_URL=postgresql://username:password@localhost:5432/mydatabase
-```
-
-(We'll update this with the real Railway database URL later)
-
-## Step 3: Create `.gitignore`
-
-Create a file called `.gitignore` to keep secrets out of Git:
-```
-venv/
-.env
-__pycache__/
-*.pyc
